@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS `t_bwoil_pay_account`;
-CREATE TABLE `t_bwoil_pay_account` (
+DROP TABLE IF EXISTS `t_bbbbb_pay_account`;
+CREATE TABLE `t_bbbbb_pay_account` (
   `id` int(19) NOT NULL AUTO_INCREMENT COMMENT '主键',
   `user_id` varchar(32) NOT NULL COMMENT '云油用户标识',
   `acount_name` varchar(64) NOT NULL COMMENT '账户姓名',
@@ -20,8 +20,8 @@ CREATE TABLE `t_bwoil_pay_account` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COMMENT='账户信息表';
 
-DROP TABLE IF EXISTS `t_bwoil_balance_change_log`;
-CREATE TABLE `t_bwoil_balance_change_log` (
+DROP TABLE IF EXISTS `t_bbbbb_balance_change_log`;
+CREATE TABLE `t_bbbbb_balance_change_log` (
   `id` int(19) NOT NULL AUTO_INCREMENT COMMENT '主键',
 -- `account_id` int(20) NOT NULL COMMENT '账户Id，关联账户主键',
 --  `mobile_phone` varchar(11) NOT NULL COMMENT '用户手机号码',
@@ -36,8 +36,8 @@ CREATE TABLE `t_bwoil_balance_change_log` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='民生出入金记录表';
 
-DROP TABLE IF EXISTS `t_bwoil_open_account_log`;
-CREATE TABLE `t_bwoil_open_account_log` (
+DROP TABLE IF EXISTS `t_bbbbb_open_account_log`;
+CREATE TABLE `t_bbbbb_open_account_log` (
   `id` int(19) NOT NULL AUTO_INCREMENT COMMENT '主键',
   `user_id` varchar(32) NOT NULL COMMENT '云油用户标识',
   `acount_name` varchar(64) NOT NULL COMMENT '账户姓名',
@@ -59,8 +59,8 @@ CREATE TABLE `t_bwoil_open_account_log` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=59 DEFAULT CHARSET=utf8 COMMENT='开户日志表';
 
-DROP TABLE IF EXISTS `t_bwoil_upload_bankcard_log`;
-CREATE TABLE `t_bwoil_upload_bankcard_log` (
+DROP TABLE IF EXISTS `t_bbbbb_upload_bankcard_log`;
+CREATE TABLE `t_bbbbb_upload_bankcard_log` (
   `id` int(19) NOT NULL AUTO_INCREMENT COMMENT '主键',
   `bank_card_no` varchar(32) NOT NULL COMMENT '银行卡号码',
   `e_protocol_ac_no` varchar(32) COMMENT '电子账户协议编码',
@@ -71,8 +71,8 @@ CREATE TABLE `t_bwoil_upload_bankcard_log` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='银行卡照片上传日志';
 
-DROP TABLE IF EXISTS `t_bwoil_upload_idcard_log`;
-CREATE TABLE `t_bwoil_upload_idcard_log` (
+DROP TABLE IF EXISTS `t_bbbbb_upload_idcard_log`;
+CREATE TABLE `t_bbbbb_upload_idcard_log` (
   `id` int(19) NOT NULL AUTO_INCREMENT COMMENT '主键',
   `id_card_no` int(32) NOT NULL COMMENT '身份证号码',
   `name` varchar(50) NOT NULL COMMENT '身份证姓名',

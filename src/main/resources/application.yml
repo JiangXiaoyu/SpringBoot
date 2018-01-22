@@ -10,7 +10,7 @@ spring:
     url: jdbc:mysql://192.168.101.61:3306/ms_bank?characterEncoding=utf8
     driverClassName: com.mysql.cj.jdbc.Driver
     username: root
-    password: bwoil@20141030
+    password: bbbbb@20141030
 
   jpa:
     showSql: true
@@ -18,6 +18,6 @@ spring:
 logging:
   level:
     com:
-      bwoil: DEBUG
+      bbbbb: DEBUG
          
     
